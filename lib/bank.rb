@@ -16,6 +16,12 @@ class Bank
     def withdraw(amount)
       @balance -= amount
     end 
+    
+    def statement
 
+       'hello user you have ' + @balance.to_s + ' '+  'pounds'
+
+
+    end 
 
 end 

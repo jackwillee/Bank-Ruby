@@ -22,4 +22,12 @@ expect(bank.balance).to eq(10)
 
 
 end 
+
+it 'should show a bank statement' do 
+ bank = Bank.new
+ bank.deposit(50)
+ expect(bank.statement).to eq('hello user you have 50 pounds')
+
+
+end 
 end 
