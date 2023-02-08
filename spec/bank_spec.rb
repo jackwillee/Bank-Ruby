@@ -14,4 +14,12 @@ it 'when a deposit is made balance should increase' do
 
 
 end 
+it 'when user makes withdrawal money should be deducted from account' do 
+bank = Bank.new
+bank.deposit(100)
+bank.withdraw(90)
+expect(bank.balance).to eq(10)
+
+
+end 
 end 
